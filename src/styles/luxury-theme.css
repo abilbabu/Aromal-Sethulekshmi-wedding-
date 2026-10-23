@@ -1,0 +1,323 @@
+/* ====================================================================
+   ROYAL WEDDING INVITATION DESIGN SYSTEM — AROMAL & SETHULEKSHMI
+   Theme: Ivory & Soft Champagne (Minimal · Elegant · Editorial)
+   Background #FAF5EC · Cards #EFE4D2 · Gold #B89452 · Text #382A27
+   ==================================================================== */
+
+@font-face {
+  font-family: 'England Hand DB';
+  src: url('/assets/fonts/england.woff') format('woff'),
+       url('/assets/fonts/england.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Ivory & Soft Champagne Editorial Palette */
+  --bg-ivory: #FAF5EC;
+  --card-champagne: #EFE4D2;
+  --gold-primary: #B89452;
+  --text-primary: #382A27;
+
+  /* Theme System Mappings */
+  --plum-deep: #FAF5EC;
+  --plum-dark: #F3ECE0;
+  --plum-wine: #EFE4D2;
+  --plum-wine-light: #E7DCB9;
+  --plum-surface: #EFE4D2;
+  --plum-surface-elevated: #F6EFE3;
+  --plum-card-border: rgba(184, 148, 82, 0.28);
+  --plum-card-border-hover: rgba(184, 148, 82, 0.65);
+
+  /* Gold Metallics */
+  --gold-champagne: #B89452;
+  --gold-light: #C9A765;
+  --gold-warm: #FAF5EC;
+  --gold-muted: #8E703B;
+  --gold-dark: #7A5F2E;
+  --gold-glow: rgba(184, 148, 82, 0.25);
+
+  /* Text & Luminous Hierarchy */
+  --text-ivory: #382A27;
+  --text-warm-light: #241A18;
+  --text-muted: #6E5651;
+  --text-subtle: rgba(56, 42, 39, 0.65);
+
+  /* Typography Stacks */
+  --font-script: 'Alex Brush', 'Great Vibes', 'England Hand DB', cursive;
+  --font-editorial: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-decorative: 'Cinzel Decorative', 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Spacing & Geometry */
+  --container-max: 1240px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-ivory);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  background-color: var(--bg-ivory);
+  color: var(--text-primary);
+}
+
+/* Luxury Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: #DFD1BA;
+  border-radius: 4px;
+  border: 1px solid rgba(184, 148, 82, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
+
+/* Selection Highlight */
+::selection {
+  background: #EAE0CE;
+  color: #382A27;
+}
+
+/* Container Utility */
+.editorial-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 4vw, 36px);
+  padding-right: clamp(16px, 4vw, 36px);
+}
+
+/* Editorial Headers & Badges */
+.editorial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px;
+  border-radius: var(--radius-full);
+  background: #EFE4D2;
+  border: 1px solid rgba(184, 148, 82, 0.35);
+  font-size: 0.72rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8E703B;
+  box-shadow: 0 4px 14px rgba(56, 42, 39, 0.06);
+  margin-bottom: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.editorial-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text-warm-light);
+}
+
+.editorial-subtitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+
+/* Luxury Card System */
+.luxury-card {
+  background: #EFE4D2;
+  border: 1px solid var(--plum-card-border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 12px 32px rgba(56, 42, 39, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--plum-card-border-hover);
+  box-shadow: 0 18px 42px rgba(56, 42, 39, 0.12), 0 0 20px rgba(184, 148, 82, 0.18);
+}
+
+/* Subtle Gold Divider */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+}
+
+.gold-divider-line {
+  flex: 1;
+  height: 1px;
+}
+
+.gold-divider-line-left {
+  background: linear-gradient(90deg, transparent, rgba(184, 148, 82, 0.5));
+}
+
+.gold-divider-line-right {
+  background: linear-gradient(90deg, rgba(184, 148, 82, 0.5), transparent);
+}
+
+/* Primary CTA Button */
+.btn-gold-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 32px;
+  min-height: 48px;
+  background: linear-gradient(180deg, #C9A765 0%, #B89452 50%, #A27F3F 100%);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-full);
+  box-shadow: 0 6px 20px rgba(184, 148, 82, 0.35), 0 4px 10px rgba(56, 42, 39, 0.08);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn-gold-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: linear-gradient(180deg, #D5B573 0%, #C4A05D 50%, #B08B49 100%);
+  box-shadow: 0 10px 30px rgba(184, 148, 82, 0.45), 0 6px 16px rgba(56, 42, 39, 0.12);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.btn-gold-primary:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Secondary Gold Outline Button */
+.btn-gold-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 24px;
+  min-height: 44px;
+  background: #EFE4D2;
+  color: #382A27;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(184, 148, 82, 0.45);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-gold-outline:hover {
+  background: #E4D6C1;
+  border-color: #B89452;
+  color: #241A18;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 42, 39, 0.08), 0 0 16px rgba(184, 148, 82, 0.2);
+}
+
+/* Ambient Radial Glow */
+.ambient-glow-plum {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184, 148, 82, 0.14) 0%, rgba(239, 228, 210, 0.35) 40%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Sacred Geometric Mandala Pattern Background */
+.mandala-bg-pattern {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(184, 148, 82, 0.28) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Keyframes */
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 16px rgba(184, 148, 82, 0.25), 0 4px 14px rgba(56, 42, 39, 0.08);
+  }
+  100% {
+    box-shadow: 0 0 28px rgba(184, 148, 82, 0.45), 0 6px 18px rgba(56, 42, 39, 0.12);
+  }
+}
+
+@keyframes gentleFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes softSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  :root {
+    --container-max: 100%;
+  }
+  .editorial-title {
+    font-size: clamp(1.8rem, 6.2vw, 2.4rem);
+  }
+  .btn-gold-primary {
+    padding: 12px 26px;
+    font-size: 0.78rem;
+  }
+}
