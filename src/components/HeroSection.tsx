@@ -85,23 +85,14 @@ export const HeroSection: React.FC = () => {
               marginBottom: '8px',
             }}
           >
-            <div
-              style={{
-                position: 'absolute',
-                width: '64px',
-                height: '64px',
-                borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(184, 148, 82, 0.35) 0%, transparent 70%)',
-                filter: 'blur(8px)',
-              }}
-            />
             <img
               src="/assets/images/lord_ganesha_gold.png"
               alt="Lord Ganesha"
               style={{
-                width: '42px',
+                width: '56px',
                 height: 'auto',
-                filter: 'drop-shadow(0 2px 10px rgba(56, 42, 39, 0.15)) drop-shadow(0 0 10px rgba(184, 148, 82, 0.35))',
+                display: 'inline-block',
+                filter: 'drop-shadow(0 1px 3px rgba(80, 50, 20, 0.22))',
               }}
             />
           </div>

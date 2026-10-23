@@ -170,9 +170,15 @@ export const CoupleSection: React.FC = () => {
                 fontSize: '0.84rem',
                 fontFamily: 'var(--font-sans)',
                 color: '#6E5651',
+                lineHeight: 1.55,
               }}
             >
-              <div>Thempamkoottathil (H), Iravon, Konni</div>
+              <div style={{ fontWeight: 600, color: '#2E2220', marginBottom: '4px' }}>
+                Son of Mrs. Jayasree &amp; Mr. Santhosh Kurup
+              </div>
+              <div style={{ color: '#6E5651' }}>
+                Thempamkoottathil (H), Iravon, Konni
+              </div>
             </div>
           </div>
 
@@ -284,9 +290,15 @@ export const CoupleSection: React.FC = () => {
                 fontSize: '0.84rem',
                 fontFamily: 'var(--font-sans)',
                 color: '#6E5651',
+                lineHeight: 1.55,
               }}
             >
-              <div>Mavelil House, Elakolloor, Konni</div>
+              <div style={{ fontWeight: 600, color: '#2E2220', marginBottom: '4px' }}>
+                Daughter of Mrs. Bindhu M G &amp; Mr. Suresh Madhavan Nair
+              </div>
+              <div style={{ color: '#6E5651' }}>
+                Suresh Bhavan, Achencovil, Kollam
+              </div>
             </div>
           </div>
         </div>

@@ -82,7 +82,7 @@ export const coupleData: CoupleDetails = {
     parents: 'Mrs. Jayasree & Mr. Santhosh Kurup',
     residence: 'Thempamkoottathil (H), Iravon, Konni, Pathanamthitta, Kerala',
     grandParents: 'Elders of the Kurup Family',
-    photo: '/assets/images/A.png',
+    photo: '/assets/images/o.jpeg',
   },
   monogram: 'S & A',
   tagline: 'Kindly grace the occasion with your esteemed presence and prayers',

@@ -139,16 +139,6 @@ export const RoyalInvitationGate: React.FC<RoyalInvitationGateProps> = ({ onOpen
             }}
           >
             {/* Ambient Gold Halo behind Ganesha */}
-            <div
-              className="royal-ganesha-halo"
-              style={{
-                position: 'absolute',
-                borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(184, 148, 82, 0.35) 0%, transparent 70%)',
-                filter: 'blur(8px)',
-                pointerEvents: 'none',
-              }}
-            />
             <img
               src="/assets/images/lord_ganesha_gold.png"
               alt="Lord Ganesha"
@@ -157,7 +147,7 @@ export const RoyalInvitationGate: React.FC<RoyalInvitationGateProps> = ({ onOpen
                 position: 'relative',
                 height: 'auto',
                 display: 'inline-block',
-                filter: 'drop-shadow(0 2px 10px rgba(56, 42, 39, 0.15)) drop-shadow(0 0 12px rgba(184, 148, 82, 0.35))',
+                filter: 'drop-shadow(0 1px 3px rgba(80, 50, 20, 0.22))',
               }}
             />
           </div>
@@ -267,8 +257,8 @@ export const RoyalInvitationGate: React.FC<RoyalInvitationGateProps> = ({ onOpen
                 src="/assets/images/sa_monogram_logo.png"
                 alt="Aromal & Sethulekshmi Monogram Logo"
                 style={{
-                  width: '94%',
-                  height: '94%',
+                  width: '100%',
+                  height: '100%',
                   objectFit: 'cover',
                 }}
               />
@@ -407,7 +397,7 @@ export const RoyalInvitationGate: React.FC<RoyalInvitationGateProps> = ({ onOpen
           height: 58px;
         }
         .royal-ganesha-img {
-          width: clamp(32px, 5.5vh, 48px);
+          width: clamp(52px, 8vh, 68px);
         }
         .royal-invocation-row {
           gap: 8px;

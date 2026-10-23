@@ -7,15 +7,17 @@ export const weddingContent = {
       firstName: "Aromal",
       fullName: "Aromal Kurup",
       roleTitle: "The Groom",
-      residence: "Thempamkoottathil (H), Iravon, Konni, Pathanamthitta, Kerala",
-      photo: "/assets/images/A.png",
+      parents: "Son of Mrs. Jayasree & Mr. Santhosh Kurup",
+      residence: "Thempamkoottathil (H), Iravon, Konni",
+      photo: "/assets/images/o.jpeg",
       description: "Rooted in tradition, with a calm spirit and deep devotion to family and heritage."
     },
     bride: {
       firstName: "Sethulekshmi",
       fullName: "Sethulekshmi S",
       roleTitle: "The Bride",
-      residence: "Mavelil House, Elakolloor (PO), Konni, Pathanamthitta, Kerala",
+      parents: "Daughter of Mrs. Bindhu M G & Mr. Suresh Madhavan Nair",
+      residence: "Suresh Bhavan, Achencovil, Kollam",
       photo: "/assets/images/S.jpg",
       description: "Radiant with timeless grace, embodying kindness, gentle elegance, and enduring cultural values."
     },
